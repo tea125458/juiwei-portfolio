@@ -369,6 +369,56 @@ const printResume = () => {
 
 .footer { text-align: center; padding: 2rem; color: #94a3b8; border-top: 1px solid #eee;}
 
+/* =======================================================
+   RWD 手機版響應式設定
+   ======================================================= */
+@media (max-width: 768px) {
+  /* Navbar */
+  .nav-links { display: none; }
+  .nav-content { justify-content: center; }
+  
+  /* Container & Padding */
+  .container { padding: 0 1.5rem; }
+  .section { padding: 3.5rem 0; }
+  .section-title { font-size: 1.75rem; margin-bottom: 2rem; }
+
+  /* Hero */
+  .hero { padding-top: 6rem; min-height: auto; padding-bottom: 2rem; }
+  .hero-title { font-size: 2.5rem; }
+  .hero-role { font-size: 1.5rem; margin-bottom: 1rem; }
+  .hero-description { font-size: 1rem; margin-bottom: 2rem; padding: 0 1rem; }
+  .hero-actions { flex-direction: column; gap: 1rem; padding: 0 1rem; }
+  .hero-actions .btn { width: 100%; text-align: center; }
+
+  /* About */
+  .about-content { grid-template-columns: 1fr; gap: 2.5rem; }
+  .image-box { max-width: 200px; margin: 0 auto; order: -1; } /* 照片放到上方 */
+  .about-text p { font-size: 1rem; text-align: justify; }
+
+  /* Skills */
+  .skill-category { padding: 1.5rem; }
+  .skill-category h3 { font-size: 1.15rem; margin-bottom: 1rem; }
+  .skill-tags { gap: 0.5rem; }
+  .tag { font-size: 0.8rem; padding: 0.4rem 0.8rem; }
+
+  /* Projects */
+  .project-info { padding: 1.5rem; }
+  .project-title { font-size: 1.4rem; }
+  .project-links { flex-direction: column; }
+  .project-links .btn { text-align: center; width: 100%; }
+
+  /* Timeline */
+  .timeline { padding-left: 1.25rem; border-left-width: 2px; margin-left: 0.5rem; }
+  .timeline-dot { left: -1.75rem; width: 14px; height: 14px; border-width: 3px; }
+  .timeline-content { padding: 1.25rem; }
+  .timeline-date { font-size: 0.8rem; padding: 0.2rem 0.6rem; }
+  .timeline-role { font-size: 1.1rem; }
+  
+  /* Contact */
+  .contact-cards { grid-template-columns: 1fr; gap: 1rem; }
+  .contact-card { padding: 1.5rem; }
+}
+
 /* Scroll Reveal Animation */
 .reveal {
   opacity: 0;
